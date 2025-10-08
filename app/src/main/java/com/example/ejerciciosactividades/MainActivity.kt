@@ -23,11 +23,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnContador).setOnClickListener {
             startActivity(Intent(this, ContadorActivity::class.java))
         }
-
         findViewById<Button>(R.id.btnConversor).setOnClickListener {
             startActivity(Intent(this, ConversorActivity::class.java))
         }
-
         findViewById<Button>(R.id.btnRegistro).setOnClickListener {
             startActivity(Intent(this, RegistroActivity::class.java))
         }

@@ -4,63 +4,68 @@
     android:id="@+id/main_conversor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Conversor kg → lb"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="?attr/colorPrimary"
-        android:layout_marginBottom="32dp"
-        android:layout_gravity="center" />
-
-    <com.google.android.material.card.MaterialCardView
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="6dp"
-        android:layout_marginBottom="24dp">
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Conversor"
+        app:titleTextColor="?attr/colorOnSurface" />
 
-        <com.google.android.material.textfield.TextInputLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Kilogramos (kg)"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            android:layout_margin="16dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etKilos"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
+                android:hint="Kilogramos (kg)"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_margin="16dp">
 
-        </com.google.android.material.textfield.TextInputLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etKilos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnConvertir"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="Convertir"
-        android:textSize="16sp"
-        app:cornerRadius="16dp"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_marginBottom="24dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-    <TextView
-        android:id="@+id/tvResultado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingresa un valor para convertir"
-        android:textAlignment="center"
-        android:padding="20dp"
-        android:textSize="18sp"
-        android:textColor="?attr/colorOnSurface"
-        android:background="?attr/colorSurfaceVariant"
-        android:backgroundTint="?attr/colorSecondaryContainer"
-        android:textColorHighlight="?attr/colorOnSecondaryContainer" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConvertir"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Convertir"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa un valor para convertir"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurface"
+            android:background="?attr/colorSecondaryContainer" />
+
+    </LinearLayout>
 
 </LinearLayout>

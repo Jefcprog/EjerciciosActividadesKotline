@@ -19,7 +19,6 @@
         android:textColor="?attr/colorPrimary"
         android:layout_marginBottom="40dp" />
 
-    <!-- Contador -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +33,6 @@
             android:padding="16dp"
             android:gravity="center_vertical">
 
-            <!-- Círculo de color como "ícono" -->
             <View
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -54,7 +52,6 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Conversor -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -88,7 +85,6 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Registro -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
