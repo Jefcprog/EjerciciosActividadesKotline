@@ -32,8 +32,8 @@
             android:textSize="64sp"
             android:textStyle="bold"
             android:textColor="?attr/colorPrimary"
-            android:background="?attr/colorPrimaryContainer"
-            android:layout_marginBottom="48dp" />
+            android:background="@drawable/shape_circle_primary"
+        android:layout_marginBottom="48dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnClic"
@@ -44,7 +44,7 @@
             android:paddingLeft="48dp"
             android:paddingRight="48dp"
             app:cornerRadius="30dp"
-            style="@style/Widget.Material3.Button.ElevatedButton" />
+            style="@style/Widget.Material3.Button" />
 
     </LinearLayout>
 

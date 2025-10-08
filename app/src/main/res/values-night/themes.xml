@@ -15,10 +15,11 @@
     <color name="tertiaryContainer">#633B48</color>
     <color name="onTertiaryContainer">#FFD8E4</color>
 
-    <color name="surface">#1C1B1F</color>
+    <color name="surface">#2A292E</color>
     <color name="onSurface">#E6E1E5</color>
     <color name="surfaceVariant">#49454F</color>
     <color name="onSurfaceVariant">#CAC4D0</color>
+
     <color name="background">#1C1B1F</color>
     <color name="onBackground">#E6E1E5</color>
 
